@@ -72,3 +72,7 @@ h4{
     li a:hover{
         background-color: #E9BC44;
     }
+
+    .weather {
+       text-align: left;
+        }

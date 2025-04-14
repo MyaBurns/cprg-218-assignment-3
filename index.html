@@ -17,6 +17,31 @@
     </div>
 </div>
 
+<h1 id="city"></h1>
+<h2>Temperature: <span id="temp"></span>C°</h2>
+<h3>Feels like: <span id="feels"></span>C°</h3>
+<script>
+    const apiURL = "https://api.weatherapi.com/v1/current.json?q=Cancun&key=4e5e576e864142e780a45600252403";
+        fetch(apiURL)
+            .then(reponse => {
+                    if(!reponse.ok){
+                            throw new Error("Network reponse was not OK")
+                    }
+                    return reponse.json();
+            })
+            .then(data => {
+                var weatherInfo = data;
+                city.innerHTML = weatherInfo.location.name;
+                temp.innerHTML = weatherInfo.current.temp_c;
+                feels.innerHTML = weatherInfo.current.feelslike_c;
+                icon.src = "https:" + weatherInfo.current.condition.icon;})
+            })
+            .catch(error => {
+                console.error("Error:", error);
+
+            })
+</script>
+
 <nav class="nav">
     <ul class="nav-items">
         <li><a href="index.html">Home</a></li>

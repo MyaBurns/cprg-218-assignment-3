@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="./favicon/favicon.png">
-    <title>Shangri-La | News</title>
+    <title>Shangri-La | Home</title>
 </head>
 
 <body>
@@ -14,8 +14,35 @@
     <div class="overlay-text">
     <img src="./Shangri-La/logo.svg" alt="the Shangri-La logo written in Georgia. it is underlined. to the left of the image is a dark teal hibiscus flower with yellow dots on top of the middle sprout.">
     <h3>Your Dream Getaway</h3>
+
+    <div class="weather">
+    <h2>Temperature: <span id="temp"></span>C°</h2>
+<h3>Feels like: <span id="feels"></span>C°</h3>
+<script>
+    const apiURL = "https://api.weatherapi.com/v1/current.json?q=Cancun&key=4d0530456dbd442788e41354251404";
+        fetch(apiURL)
+            .then(response => {
+                    if(!response.ok){
+                            throw new Error("Network reponse was not OK")
+                    }
+                    return response.json();
+            })
+            .then(data => {
+                var weatherInfo = data;
+                temp.innerHTML = weatherInfo.current.temp_c;
+                feels.innerHTML = weatherInfo.current.feelslike_c;
+                })
+            
+            .catch(error => {
+                console.error("Error:", error);
+
+            })
+</script>
+</div>
     </div>
 </div>
+
+
 
 <nav class="nav">
     <ul class="nav-items">

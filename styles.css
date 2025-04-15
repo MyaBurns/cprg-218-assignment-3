@@ -38,10 +38,15 @@ h3{
     font-size: 10pt;
     color: black;
     font-style: italic;
+    font-weight: normal;
 }
 
 h4{
     font-size: 7pt;
+}
+
+p{
+   font-size: 7pt; 
 }
 
 .nav {
@@ -58,7 +63,7 @@ h4{
 }
     
 
-    li a{
+li a{
         display: block;
         color: black;
         background-color:white;
@@ -69,10 +74,45 @@ h4{
         border-color: black;
     }
     
-    li a:hover{
+li a:hover{
         background-color: #E9BC44;
     }
 
-    .weather {
+.weather {
        text-align: left;
         }
+
+.index-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.index-left{
+    padding:1rem;
+}
+.index-middle{
+    padding:1rem;
+}
+.index-right{
+    padding:1rem;
+    margin-top: 2rem;
+}
+
+.submit{
+    border-style:groove;
+    border-color: black;
+    background: #306770;
+    font-size: 15px;
+    float: right;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    float: right;
+}

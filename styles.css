@@ -85,7 +85,7 @@ li a:hover{
 
 .index-content{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -125,5 +125,11 @@ a{
   object-fit: cover ;
   display: flex;
   gap:15px;
-  margin-top: 20px;;
+  margin-top: 20px;
+
+}
+
+.index-images{
+    text-align: center;
+    padding: 2ch;
 }

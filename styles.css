@@ -143,23 +143,26 @@ li a:hover{
 
 .self-care{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 2fr;
 }
 
 .reefs{
     display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 2fr ;
+gap:1rem;
 }
 
 .self-care-reefs{
     display: grid;
     grid-template-columns: auto auto;
-    gap:5rem;
+    gap:1rem;
+    margin-top: 5ch;
 }
 
 .chef-ty{
     display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: auto 1fr;
+align-items:start;
 }
 
 figcaption{
@@ -204,6 +207,7 @@ figcaption{
     color: black;
     text-decoration: none;
     display: inline-block;
+    
 }
 
 .book-now{
@@ -214,6 +218,7 @@ figcaption{
     float:inline-start;
     margin-bottom: 2rem;
     margin-left: 2rem;
+    font-size: x-small;
 
 }
 

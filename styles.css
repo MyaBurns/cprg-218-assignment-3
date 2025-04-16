@@ -31,6 +31,10 @@ body{
 
 }
 
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h2 {
     font-size: 12px;
 }
@@ -260,4 +264,35 @@ figcaption{
     border-top: none;
     border-bottom: none;
     padding-left: 3ch;
+}
+
+.booking{
+    text-align: center;
+}
+
+.booking-form{
+    text-align: center;
+}
+
+.booking-form-room-type{
+    text-align: center;
+    margin-bottom:10ch;
+}
+
+.booking-submit{
+    border-style:groove;
+    border-color: black;
+    background: #306770;
+    font-size: 15px;
+    margin-bottom: 10ch; 
+}
+
+.booking-submit:hover{
+    background-color: #E9BC44;
+}
+
+.booking-submit a{
+    color:white;
+    text-decoration: none;
+
 }

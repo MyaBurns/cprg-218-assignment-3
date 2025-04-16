@@ -108,11 +108,14 @@ li a:hover{
     font-size: 15px;
     float: right;
     margin-bottom: 2rem;
-    margin-left: 2rem;
-
+    margin-left: 2rem;  
 }
 
-a{
+.submit:hover{
+    background-color: #E9BC44;
+}
+
+.submit a{
     color:white;
     text-decoration: none;
     float: right;
@@ -133,3 +136,52 @@ a{
     text-align: center;
     padding: 2ch;
 }
+
+.self-care{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.reefs{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.self-care-reefs{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:5rem;
+}
+
+.chef-ty{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+figcaption{
+    font-size: 7px;
+    font-style: italic;
+}
+
+.full-article{
+    border-style:groove;
+    border-color: black;
+    background: #ffffff;
+    font-size: 7px;
+    float: right;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+}
+
+.full-article a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.full-article:hover{
+    background-color: #E9BC44;
+}
+
+

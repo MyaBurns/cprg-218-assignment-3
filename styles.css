@@ -191,6 +191,28 @@ figcaption{
     margin-top: 1rem;
 }
 
-li{
+.guest-rooms li{
     font-size: 7px;
+    font
+}
+
+.book-now a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.book-now{
+    border-style:groove;
+    border-color: black;
+    background: #ffffff;
+    font-size: 7px;
+    float:inline-start;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+}
+
+.book-now:hover{
+    background-color: #E9BC44;
 }

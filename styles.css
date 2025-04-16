@@ -184,4 +184,13 @@ figcaption{
     background-color: #E9BC44;
 }
 
+.guest-rooms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
 
+li{
+    font-size: 7px;
+}

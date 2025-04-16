@@ -216,3 +216,48 @@ figcaption{
 .book-now:hover{
     background-color: #E9BC44;
 }
+
+.ocean-view{
+    border-right: #000000;
+    border-style: groove;
+    border-left:none;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 3ch;
+}
+
+.beachfront{
+    border-right: #000000;
+    border-style: groove;
+    border-left:none;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 3ch;
+}
+
+.garden-view{
+    border-right: #000000;
+    border-style: groove;
+    border-left:none;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 3ch;
+}
+
+.premuim{
+    border-right: #000000;
+    border-style: groove;
+    border-left:none;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 3ch;
+}
+
+.accessible{
+    border-left: #000000;
+    border-style: groove;
+    border-right:none;
+    border-top: none;
+    border-bottom: none;
+    padding-left: 3ch;
+}

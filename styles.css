@@ -301,3 +301,50 @@ figcaption{
     text-decoration: none;
 
 }
+
+.serenity-sanctuary{
+    float:;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items:start;
+}
+
+.activities{
+    float:left;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items:start;
+}
+
+.activities-image{
+    float:right;
+}
+
+.culinary-journey{
+    float:left;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items:start;
+}
+
+.learn-more{
+    border-style:groove;
+    border-color: black;
+    background: #ffffff;
+    font-size: 7px;
+    float: right;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+}
+
+.learn-more a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.learn-more:hover{
+    background-color: #E9BC44;
+}
+

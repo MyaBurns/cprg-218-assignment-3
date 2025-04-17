@@ -1,4 +1,16 @@
+
+
+
+@font-face {
+    font-family: 'euphemia_ucasregular';
+    src: url('euphemia-ucas-regular-webfont.woff2') format('woff2'),
+         url('euphemia-ucas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 footer {
+    font-family:euphemia ucas;
     background-color: #306770;
     color: white;
     font-style:italic;
@@ -9,26 +21,12 @@ body{
     background-color: #bee7e7;
 }
 
-.image-container {
-    position:relative;
-    display: inline-block;
-}
 
-.image-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-
-}
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    text-align: center;
-
+header{
+    background-image: url(./images/alteredimages/RESIZEDwhite-sand-beach.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1{
@@ -36,10 +34,12 @@ h1{
 }
 
 h2 {
+    font-family:euphemia ucas;
     font-size: 12px;
 }
 
 h3{
+    font-family:euphemia ucas;
     font-size: 10px;
     color: black;
     font-style: italic;
@@ -47,10 +47,12 @@ h3{
 }
 
 h4{
+    font-family:euphemia ucas;
     font-size: 7px;
 }
 
 p{
+    font-family:euphemia ucas;
    font-size: 7px; 
 }
 
@@ -65,6 +67,7 @@ p{
     list-style: none;
     padding:0;
     margin:0;
+    font-family:euphemia ucas;
 }
     
 
@@ -77,6 +80,7 @@ li a{
         text-decoration: none;
         border-style:inset;
         border-color: black;
+        
     }
     
 li a:hover{
@@ -112,7 +116,8 @@ li a:hover{
     font-size: 15px;
     float: right;
     margin-bottom: 2rem;
-    margin-left: 2rem;  
+    margin-left: 2rem; 
+    font-family:euphemia ucas; 
 }
 
 .submit:hover{
@@ -168,6 +173,7 @@ align-items:start;
 figcaption{
     font-size: 7px;
     font-style: italic;
+    font-family:euphemia ucas;
 }
 
 .full-article{
@@ -211,6 +217,7 @@ figcaption{
 }
 
 .book-now{
+    font-family:euphemia ucas;
     border-style:groove;
     border-color: black;
     background: #ffffff;
@@ -226,53 +233,14 @@ figcaption{
     background-color: #E9BC44;
 }
 
-.ocean-view{
-    border-right: #000000;
-    border-style: groove;
-    border-left:none;
-    border-top: none;
-    border-bottom: none;
-    padding-right: 3ch;
-}
-
-.beachfront{
-    border-right: #000000;
-    border-style: groove;
-    border-left:none;
-    border-top: none;
-    border-bottom: none;
-    padding-right: 3ch;
-}
-
-.garden-view{
-    border-right: #000000;
-    border-style: groove;
-    border-left:none;
-    border-top: none;
-    border-bottom: none;
-    padding-right: 3ch;
-}
-
-.premuim{
-    border-right: #000000;
-    border-style: groove;
-    border-left:none;
-    border-top: none;
-    border-bottom: none;
-    padding-right: 3ch;
-}
-
-.accessible{
-    border-left: #000000;
-    border-style: groove;
-    border-right:none;
-    border-top: none;
-    border-bottom: none;
-    padding-left: 3ch;
+.guest-rooms > div{
+    border-right: 2px groove #000 ;
+    padding-right: 2rem;
 }
 
 .booking{
     text-align: center;
+    
 }
 
 .booking-form{
@@ -302,31 +270,6 @@ figcaption{
 
 }
 
-.serenity-sanctuary{
-    float:;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items:start;
-}
-
-.activities{
-    float:left;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items:start;
-}
-
-.activities-image{
-    float:right;
-}
-
-.culinary-journey{
-    float:left;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items:start;
-}
-
 .learn-more{
     border-style:groove;
     border-color: black;
@@ -348,3 +291,27 @@ figcaption{
     background-color: #E9BC44;
 }
 
+.serenity-sanctuary{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    }
+    
+    .activities{
+        display: grid;
+    grid-template-columns: 1fr 2fr ;
+    gap:1rem;
+    }
+    
+    .serenity-activities{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:1rem;
+        margin-top: 5ch;
+    }
+    
+    .culinary-journey{
+        display: grid;
+    grid-template-columns: auto 1fr;
+    align-items:start;
+    }
+    

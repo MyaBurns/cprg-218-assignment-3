@@ -9,15 +9,16 @@
 </head>
 
 <body>
-<div class="image-container">
-    <img src="./images/alteredimages/RESIZEDwhite-sand-beach.jpg" alt="an image of a landscape of a beach with white sand and a blue sky. The ocean is blue and on the right of the image. There is a rocky and grassy hill on the left of the image. There is a green palm tree on the right." style="width:100%">
+<header>
     <div class="overlay-text">
     <img src="./Shangri-La/logo.svg" alt="the Shangri-La logo written in Georgia. it is underlined. to the left of the image is a dark teal hibiscus flower with yellow dots on top of the middle sprout.">
     <h3>Your Dream Getaway</h3>
 
+
     <div class="weather">
     <h2>Temperature: <span id="temp"></span>C°</h2>
 <h3>Feels like: <span id="feels"></span>C°</h3>
+</header>
 <script>
     const apiURL = "https://api.weatherapi.com/v1/current.json?q=Cancun&key=4d0530456dbd442788e41354251404";
         fetch(apiURL)
@@ -44,6 +45,8 @@
 
 
 
+
+
 <nav class="nav">
     <ul class="nav-items">
         <li><a href="index.html">Home</a></li>
@@ -65,18 +68,18 @@
     Check-in:
     <input type="text" class="text-box" placeholder="Thursday, April 3 2025">
 </div>
-    <br>
-    <br>
+    
 <div class="booking-form">
         Check-out:
-        <input type="text" class="text-box">
+    <input type="text" class="text-box">
 </div>
-<br>
-<br>
 <div class="booking-form-room-type">
     Room Type:
-    <input type="text" class="text-box"> 
-    <input type="submit">
+    <input type="text" class="text-box">
+    </div>
+    <div class="submit-button-contact">
+    <input type="submit"> 
+    </div>
 </div>
     
 <footer>Follow us on social media @Shangri_LaResort</footer>

@@ -60,6 +60,7 @@ p{
     display:flex;
     justify-content: center;
     width:100%;
+
 }
 
 .nav-items {
@@ -80,6 +81,7 @@ li a{
         text-decoration: none;
         border-style:inset;
         border-color: black;
+        font-size: medium;
         
     }
     
@@ -100,34 +102,16 @@ li a:hover{
 
 .index-left{
     padding:1rem;
+    
 }
 .index-middle{
     padding:1rem;
+    
 }
 .index-right{
     padding:1rem;
     margin-top: 2rem;
-}
-
-.submit{
-    border-style:groove;
-    border-color: black;
-    background: #306770;
-    font-size: 15px;
-    float: right;
-    margin-bottom: 2rem;
-    margin-left: 2rem; 
-    font-family:euphemia ucas; 
-}
-
-.submit:hover{
-    background-color: #E9BC44;
-}
-
-.submit a{
-    color:white;
-    text-decoration: none;
-    float: right;
+    font-family: euphemia ucas;
 }
 
 .circle-images{
@@ -184,6 +168,7 @@ figcaption{
     float: right;
     margin-bottom: 2rem;
     margin-left: 2rem;
+    font-family: euphemia ucas;
 
 }
 
@@ -278,6 +263,7 @@ figcaption{
     float: right;
     margin-bottom: 2rem;
     margin-left: 2rem;
+    font-family: euphemia ucas;
 
 }
 
@@ -314,4 +300,40 @@ figcaption{
     grid-template-columns: auto 1fr;
     align-items:start;
     }
+
+    input[type="submit"] {
+        border-style: groove;
+        border-color: black;
+        background-color: #306770;
+        font-size: 15px;
+        font-family: euphemia ucas;
+        color: white;
+        overflow: auto;
+   
+    }
     
+    .submit-button input[type="submit"]:hover {
+        background-color: #E9BC44;
+    }
+
+    .booking-form{
+        margin: 20px;
+    }
+
+ul li {
+font-family: euphemia ucas;
+font-size: 7px;}
+
+.massages-body-facials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.add-ons-wellness-manicures{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}

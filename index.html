@@ -9,15 +9,16 @@
 </head>
 
 <body>
-<div class="image-container">
-    <img src="./images/alteredimages/RESIZEDwhite-sand-beach.jpg" alt="an image of a landscape of a beach with white sand and a blue sky. The ocean is blue and on the right of the image. There is a rocky and grassy hill on the left of the image. There is a green palm tree on the right." style="width:100%">
+<header>
     <div class="overlay-text">
     <img src="./Shangri-La/logo.svg" alt="the Shangri-La logo written in Georgia. it is underlined. to the left of the image is a dark teal hibiscus flower with yellow dots on top of the middle sprout.">
     <h3>Your Dream Getaway</h3>
 
+
     <div class="weather">
     <h2>Temperature: <span id="temp"></span>C°</h2>
 <h3>Feels like: <span id="feels"></span>C°</h3>
+</header>
 <script>
     const apiURL = "https://api.weatherapi.com/v1/current.json?q=Cancun&key=4d0530456dbd442788e41354251404";
         fetch(apiURL)
@@ -41,6 +42,9 @@
 </div>
     </div>
 </div>
+
+
+
 
 <nav class="nav">
     <ul class="nav-items">
@@ -84,58 +88,51 @@
     <div class="index-middle">
             <h2>What Our Guests Are Saying</h2>
 
-                <p>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."
+            <ul>
+                <li>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."
             
-                - Sarah M.
+                - Sarah M.</li>
            
-                <br>
-                <br>
-                "The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."
+            
+                <li>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."
 
-     
-                - John B.
-                <br>
-                <br>
-                "We traveled with our two young children, and the Kids' Club was a lifesaver! The staff were fantastic, and our kids had a blast. This allowed us some much-needed relaxation time. The resort is very family-friendly."
-                - Emily K.
-                <br>
-                <br>
-                "The spa experience was divine. The therapists were skilled, and the atmosphere was so peaceful. It was the perfect way to unwind and de-stress. We left feeling completely rejuvenated."
-                - David L.
-                <br>
-                <br>
-                "From the moment we arrived, the staff made us feel welcome and well taken care of. The attention to detail was outstanding. Shangri La truly lives up to its name - a little slice of paradise!"
-                - Jessica P.
-                <br>
-                <br>
-                We are always striving to provide exceptional experiences for our guests. If you have enjoyed your stay at Shangri La Beach Resort, we would love to hear from you!
+                - John B.</li>
+            
+                <li>"We traveled with our two young children, and the Kids' Club was a lifesaver! The staff were fantastic, and our kids had a blast. This allowed us some much-needed relaxation time. The resort is very family-friendly."
+                
+                - Emily K.</li>
+                
+                <li>"The spa experience was divine. The therapists were skilled, and the atmosphere was so peaceful. It was the perfect way to unwind and de-stress. We left feeling completely rejuvenated."
+
+                - David L.</li>
+                
+                <li>"From the moment we arrived, the staff made us feel welcome and well taken care of. The attention to detail was outstanding. Shangri La truly lives up to its name - a little slice of paradise!"
+                    
+                - Jessica P.</li>
+                
+                <p>We are always striving to provide exceptional experiences for our guests. If you have enjoyed your stay at Shangri La Beach Resort, we would love to hear from you!
                 </p>
     </div>
     <div class="index-right">
 
-      
         <div class="check-in">
 
             Check-in:
             <input type="text" class="text-box" placeholder="Thursday, April 3 2025">
         </div>
-            <br>
-            <br>
+           
         <div class="check-out">
                 Check-out:
                 <input type="text" class="text-box">
         </div>
-        <br>
-        <br>
+        
         <div class="room-type">
             Room Type:
             <input type="text" class="text-box"> 
         </div>
-        <br>
-        <br>
-            <span class="submit">
-            <a href="#">Submit</a>
-            </span>
+        <div class="submit-button">
+            <input type="submit"> 
+            </div>
       
             <h3>Our Luxurious Accommodations
 
@@ -154,14 +151,11 @@
     </div>
         <div class="index-images">
             <img src="./images/alteredimages/RESIZEpalm-tree.png" alt="Image overlooking the dark blue ocean, with the top of a palm tree on the right, and a rainbow in the distance on the left side of the image. Overall, the image looks as though it was taken after a storm." width="150" height="150">
-            <br>
-            <br>
+            
             <img src="./images/alteredimages/RESIZEhotel2.png" alt="Image of a rocky hill with green bushes from top to bottom on it. The hill is on the ocean, and near the water there is a hotel that is slightly covered by the greenery" width="200" height="133">
-            <br>
-            <br>
+            
             <img src="./images/alteredimages/RESIZEwhite-sand-beach.png" alt="an image of a landscape of a beach with white sand and a blue sky. The ocean is blue and on the right of the image. There is a rocky and grassy hill on the left of the image. There is a green palm tree on the right." width="200" height="132">
-            <br>
-            <br>
+            
             <img src="./images/alteredimages/RESIZEpink-sand.png" alt="Close up image of a footprint in pink sand." width="150" height="150">
         </div>
 </div>

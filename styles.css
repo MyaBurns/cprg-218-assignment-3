@@ -108,7 +108,12 @@ li a:hover{
 }
 .index-middle{
     padding:1rem;
+    margin-left: 1rem;
     
+}
+
+.index-middle h2{
+    margin-left: 2.5rem;
 }
 .index-right{
     padding:1rem;
@@ -117,19 +122,24 @@ li a:hover{
 }
 
 .circle-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-radius: 50%;
   width: 100px;
-  height:100px ;
-  object-fit: cover ;
-  display: flex;
-  gap:15px;
-  margin-top: 20px;
-
+  height:100px;
+  object-fit: cover;
+  gap:1rem;
+  padding-top: 2ch;
+  margin-top: 2ch;
 }
 
 .index-images{
-    text-align: center;
     padding: 2ch;
+    display: grid;
+}
+
+.index-images img{
+    padding: 1ch;
 }
 
 .self-care{
@@ -140,7 +150,6 @@ grid-template-columns: 1fr 2fr;
 .reefs{
     display: grid;
 grid-template-columns: 1fr 2fr ;
-gap:1rem;
 }
 
 .self-care-reefs{
@@ -152,8 +161,23 @@ gap:1rem;
 
 .chef-ty{
     display: grid;
-grid-template-columns: auto 1fr;
-align-items:start;
+    grid-template-columns: 1fr 2fr;
+}
+
+.content-chef-ty{
+    margin-right: 10rem;
+    padding-right: 5rem;
+}
+
+.chef-ty-spacer{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 5ch;
+}
+
+.spacer{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
 }
 
 figcaption{
@@ -171,7 +195,8 @@ figcaption{
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-family: euphemia ucas;
-
+    white-space: nowrap; 
+    border-radius: 15%;
 }
 
 .full-article a{
@@ -193,7 +218,7 @@ figcaption{
 
 .guest-rooms li{
     font-size: 7px;
-    font
+    font-family: euphemia ucas;
 }
 
 .book-now a{
@@ -209,10 +234,11 @@ figcaption{
     border-color: black;
     background: #ffffff;
     font-size: 7px;
-    float:inline-start;
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-size: x-small;
+    white-space: nowrap; 
+    border-radius: 15%;
 
 }
 
@@ -223,6 +249,7 @@ figcaption{
 .guest-rooms > div{
     border-right: 2px groove #000 ;
     padding-right: 2rem;
+
 }
 
 .booking{
@@ -239,23 +266,6 @@ figcaption{
     margin-bottom:10ch;
 }
 
-.booking-submit{
-    border-style:groove;
-    border-color: black;
-    background: #306770;
-    font-size: 15px;
-    margin-bottom: 10ch; 
-}
-
-.booking-submit:hover{
-    background-color: #E9BC44;
-}
-
-.booking-submit a{
-    color:white;
-    text-decoration: none;
-
-}
 
 .learn-more{
     border-style:groove;
@@ -266,6 +276,8 @@ figcaption{
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-family: euphemia ucas;
+    white-space: nowrap;
+    border-radius: 15%; 
 
 }
 
@@ -282,6 +294,7 @@ figcaption{
 .serenity-sanctuary{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap:1ch;
     }
     
     .activities{
@@ -301,6 +314,23 @@ figcaption{
         display: grid;
     grid-template-columns: auto 1fr;
     align-items:start;
+    gap:1ch;
+    }
+
+    .culinary-journey-content{
+        margin-right: 10rem;
+        padding-right: 5rem;
+    }
+
+    .culinary-spacer{
+        display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 5ch;
+    }
+
+    .amenities-spacer{
+        display: grid;
+    grid-template-columns: 1fr 2fr ;
     }
 
     input[type="submit"] {
@@ -311,20 +341,20 @@ figcaption{
         font-family: euphemia ucas;
         color: white;
         overflow: auto;
-   
     }
     
-    .submit-button input[type="submit"]:hover {
-        background-color: #E9BC44;
-    }
-
     .booking-form{
         margin: 20px;
     }
 
 ul li {
 font-family: euphemia ucas;
-font-size: 7px;}
+font-size: 7px;
+list-style-type: none;}
+
+ul li::before{
+content:"-"
+}
 
 .massages-body-facials{
     display: grid;
@@ -348,6 +378,8 @@ font-size: 7px;}
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-family: euphemia ucas;
+    white-space: nowrap; 
+    border-radius: 15%;
 }
 
 .book-an-appointment a{
@@ -360,12 +392,26 @@ font-size: 7px;}
     background-color: #E9BC44;
 }
 
+.serenity-circle-images{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
 .beach-sand-poolside{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
 }
+
+.poolside-image{
+    padding-top: 3ch;
+}
+
 
 .lobby-other{
     display: grid;
@@ -382,6 +428,7 @@ font-size: 7px;}
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-family: euphemia ucas;
+    border-radius: 15%;
 }
 
 .make-a-reservation a{
@@ -413,3 +460,39 @@ font-size: 7px;}
     padding:0.5rem;
 
 }
+
+.submit-index input[type="submit"]{
+    border-style:groove;
+    border-color: black;
+    background: #306770;
+    font-size: 15px;
+    margin-bottom: 5ch; 
+    margin-top: 2ch;
+}
+
+.submit-index{
+    text-align: right;
+}
+
+.submit-index input[type="submit"]:hover {
+    background-color: #E9BC44;
+}
+
+.submit-contact input[type="submit"]{
+    border-style: groove;
+    border-color: black;
+    background: #306770;
+    font-size: 15px;
+    margin-bottom: 15ch;
+    margin-left: 0;
+    margin-right: 10ch;
+}
+
+.submit-contact input[type="submit"]:hover {
+    background-color: #E9BC44;
+}
+
+.submit-contact{
+    text-align: right;
+}
+

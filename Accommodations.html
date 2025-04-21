@@ -12,13 +12,15 @@
 <header>
     <div class="overlay-text">
     <img src="./Shangri-La/logo.svg" alt="the Shangri-La logo written in Georgia. it is underlined. to the left of the image is a dark teal hibiscus flower with yellow dots on top of the middle sprout.">
-    <h3>Your Dream Getaway</h3>
+    <div class="your-dream-getaway">
+        <h3>Your Dream Getaway</h3>
+        </div>
 
 
     <div class="weather">
     <h2>Temperature: <span id="temp"></span>C°</h2>
 <h3>Feels like: <span id="feels"></span>C°</h3>
-
+</header>
 <script>
     const apiURL = "https://api.weatherapi.com/v1/current.json?q=Cancun&key=4d0530456dbd442788e41354251404";
         fetch(apiURL)
@@ -41,7 +43,9 @@
 </script>
 </div>
     </div>
-</header>
+</div>
+
+
 
 
 

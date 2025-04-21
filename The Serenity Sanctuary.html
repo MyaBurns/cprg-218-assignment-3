@@ -9,21 +9,22 @@
 </head>
 
 <body>
-<div class="image-container">
-    <img src="./images/alteredimages/RESIZEDwhite-sand-beach.jpg" alt="an image of a landscape of a beach with white sand and a blue sky. The ocean is blue and on the right of the image. There is a rocky and grassy hill on the left of the image. There is a green palm tree on the right." style="width:100%">
+<header>
     <div class="overlay-text">
     <img src="./Shangri-La/logo.svg" alt="the Shangri-La logo written in Georgia. it is underlined. to the left of the image is a dark teal hibiscus flower with yellow dots on top of the middle sprout.">
     <h3>Your Dream Getaway</h3>
 
+
     <div class="weather">
     <h2>Temperature: <span id="temp"></span>C°</h2>
 <h3>Feels like: <span id="feels"></span>C°</h3>
+</header>
 <script>
     const apiURL = "https://api.weatherapi.com/v1/current.json?q=Cancun&key=4d0530456dbd442788e41354251404";
         fetch(apiURL)
             .then(response => {
                     if(!response.ok){
-                            throw new Error("Network response was not OK")
+                            throw new Error("Network reponse was not OK")
                     }
                     return response.json();
             })
@@ -43,6 +44,8 @@
 </div>
 
 
+
+
 <nav class="nav">
     <ul class="nav-items">
         <li><a href="index.html">Home</a></li>
@@ -53,8 +56,111 @@
     </ul>
 </nav>
 
+<div class="massages-body-facials">
+
+<div class="massages">
+<h2>Massages</h2>
+<h4>Shangri La Signature Massage (90 minutes): $250</h4>
+<p>A customized massage using a blend of techniques to release tension and promote deep relaxation</p>
+
+<h4>Deep Tissue Massage (60 minutes / 90 minutes): $180 / $260</h4>
+<p>Targeted massage to relieve chronic muscle tension and pain.</p>
+
+<h4>Hot Stone Massage (75 minutes): $220</h4>
+<p>Soothing massage using warm basalt stones to melt away stress and improve circulation.</p>
+
+<h4>Aromatherapy Massage (60 minutes): $190</h4>
+<p>Relaxing massage using essential oils to enhance mood and well-being.</p>
+
+<h4>Swedish Massage (60 minutes / 90 minutes): $170 / $240</h4>
+<p>A classic relaxation massage.</p>
+
+<h4>Couples Massage (60 Minutes): $350 (per couple)</h4>
+<p>Relax with a partner in a private room.</p>
+
+<span class="book-an-appointment">
+    <a href="#">Book an Appointment</a>
+</span>
+</div>
+
+<div class="body">
+<h2>Body Treatments</h2>
+<h4>Sea Salt Body Scrub (45 minutes): $150</h4>
+<p>Exfoliating treatment to remove dead skin cells and reveal smoother skin.</p>
+
+<h4>Tropical Body Wrap (60 minutes): $200</h4>
+<p>Hydrating and nourishing body wrap using natural ingredients.</p>
+
+<h4>Sun Relief Wrap (60 Minutes): $170</h4>
+<p>Soothing treatment to cool and hydrate skin after sun exposure.</p>
+
+<span class="book-an-appointment">
+    <a href="#">Book an Appointment</a>
+</span>
+</div>
+
+<div class="facials">
+<h2>Facials</h2>
+<h4>Shangri La Radiance Facial (75 minutes): $210</h4>
+<p>A luxurious facial tailored to your skin type, leaving your complexion glowing.</p>
+
+<h4>Hydrating Facial (60 minutes): $180</h4>
+<p>Deeply nourishing facial to replenish moisture and restore skin's vitality.</p>
+
+<h4>Anti-Aging Facial (90 minutes): $270</h4>
+<p>Advanced facial treatment to reduce fine lines and wrinkles.</p>
+
+<h4>Purifying Facial (60 minutes): $160</h4>
+<p>Cleansing facial designed to remove impurities and leave a fresh feeling.</p>
+<span class="book-an-appointment">
+    <a href="#">Book an Appointment</a>
+</span>
+</div>
+
+<img src="" alt="" class="circle-images" width="" height="">
+</div>
 
 
+<div class="add-ons-wellness-manicures">
+
+<div class="add-ons">
+<h2>Add-ons</h2>
+<h4>Scalp Massage</h4> <p>(15 minutes): $40</p>
+
+<h4>Eye Treatment</h4> <p>(15 minutes): $35</p>
+
+<h4>Foot Reflexology</h4> <p>(15 minutes): $40</p>
+<span class="book-an-appointment">
+    <a href="#">Book an Appointment</a>
+</span>
+</div>
+
+<div class="wellness">
+<h2>Wellness Programs</h2>
+<h4>Yoga Session</h4> <p>(60 minutes): $50 (Group), $120 (Private)</p>
+
+<h4>Meditation Session</h4> <p>(30 minutes): $40 (Group), $100 (Private)</p>
+<span class="book-an-appointment">
+    <a href="#">Book an Appointment</a>
+</span>
+</div>
+
+<div class="manicures">
+<h2>Manicures & Pedicures</h2>
+<h4>Shangri La Deluxe Manicure</h4> <p>(60 minutes): $90</p>
+
+<h4>Shangri La Deluxe Pedicure</h4> <p>(75 minutes): $110</p>
+
+<h4>Classic Manicure</h4> <p>(45 minutes): $70</p>
+
+<h4>Classic Pedicure</h4> <p>(60 minutes): $90</p>
+<span class="book-an-appointment">
+    <a href="#">Book an Appointment</a>
+</span>
+</div>
+
+<img src="" alt="" class="circle-images" width="" height="">
+</div>
 
     
 <footer>Follow us on social media @Shangri_LaResort</footer>

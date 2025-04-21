@@ -36,6 +36,7 @@ h1{
 h2 {
     font-family:euphemia ucas;
     font-size: 12px;
+
 }
 
 h3{
@@ -49,6 +50,7 @@ h3{
 h4{
     font-family:euphemia ucas;
     font-size: 7px;
+
 }
 
 p{
@@ -326,14 +328,38 @@ font-size: 7px;}
 
 .massages-body-facials{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
 }
 
 .add-ons-wellness-manicures{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
 }
+
+.book-an-appointment{
+    border-style:groove;
+    border-color: black;
+    background: #ffffff;
+    font-size: 7px;
+    float: right;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-family: euphemia ucas;
+    align-items: center;
+
+}
+
+.book-an-appointment a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.book-an-appointment:hover{
+    background-color: #E9BC44;
+}
+

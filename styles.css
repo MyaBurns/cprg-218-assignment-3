@@ -348,8 +348,6 @@ font-size: 7px;}
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-family: euphemia ucas;
-
-
 }
 
 .book-an-appointment a{
@@ -362,3 +360,44 @@ font-size: 7px;}
     background-color: #E9BC44;
 }
 
+.beach-sand-poolside{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.lobby-other{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.make-a-reservation{
+    border-style:groove;
+    border-color: black;
+    background: #ffffff;
+    font-size: 7px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-family: euphemia ucas;
+}
+
+.make-a-reservation a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.make-a-reservation:hover{
+    background-color: #E9BC44;
+}
+
+.other-image{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

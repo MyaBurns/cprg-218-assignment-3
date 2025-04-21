@@ -401,3 +401,15 @@ font-size: 7px;}
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+.act{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.activities-right img{
+    padding:0.5rem;
+
+}

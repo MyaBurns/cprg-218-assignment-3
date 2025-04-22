@@ -75,21 +75,20 @@ p{
     list-style: none;
     padding:0;
     margin:0;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
     
 
 li a{
-        display: block;
-        color: black;
-        background-color:white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        border-style:inset;
-        border-color: black;
-        font-size: 15px;
-        
+    display: block;
+    color: black;
+    background-color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-style:inset;
+    border-color: black;
+    font-size: 17px;
+    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     }
     
 li a:hover{
@@ -120,7 +119,15 @@ li a:hover{
 .index-middle ul li {
   margin-bottom: 1.5em; 
   line-height: 1.6;
+  font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  list-style-type: none;
 }
+
+.index-middle ul li::before{
+content:"-"
+}
+
 
 .index-middle h2{
     margin-left: 2.5rem;
@@ -354,12 +361,12 @@ figcaption{
         margin: 20px;
     }
 
-ul li {
+.guest-rooms ul li {
     font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
 font-size: 12px;
 list-style-type: none;}
 
-ul li::before{
+.guest-rooms ul li::before{
 content:"-"
 }
 
@@ -467,7 +474,8 @@ content:"-"
 }
 
 .activities-right img{
-    padding:0.5rem;
+    display: block;
+    object-fit: cover;
 }
 
 .activities-right {
@@ -475,6 +483,7 @@ content:"-"
     grid-template-columns: 1fr;
     justify-items: center; 
     margin-top: 1rem;
+
 }
 
 .submit-index input[type="submit"]{

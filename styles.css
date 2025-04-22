@@ -17,6 +17,11 @@ footer {
     
 }
 
+.your-dream-getaway h3{
+    font-size:20px;
+    text-align: right;
+}
+
 body{
     background-color: #bee7e7;
 }
@@ -111,6 +116,11 @@ li a:hover{
     margin-left: 1rem;
     
 }
+
+.index-middle ul li {
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+  }
 
 .index-middle h2{
     margin-left: 2.5rem;
@@ -496,3 +506,6 @@ content:"-"
     text-align: right;
 }
 
+.please-review{
+    padding-left: 5ch;
+}

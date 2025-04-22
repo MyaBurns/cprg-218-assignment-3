@@ -118,9 +118,9 @@ li a:hover{
 }
 
 .index-middle ul li {
-    margin-bottom: 1.5em;
-    line-height: 1.6;
-  }
+  margin-bottom: 1.5em; 
+  line-height: 1.6;
+}
 
 .index-middle h2{
     margin-left: 2.5rem;
@@ -155,11 +155,13 @@ li a:hover{
 .self-care{
 display: grid;
 grid-template-columns: 1fr 2fr;
+align-items: start;
 }
 
 .reefs{
     display: grid;
 grid-template-columns: 1fr 2fr ;
+align-items: start;
 }
 
 .self-care-reefs{
@@ -169,26 +171,21 @@ grid-template-columns: 1fr 2fr ;
     margin-top: 5ch;
 }
 
-.chef-ty{
+.chef-ty {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.content-chef-ty{
-    margin-right: 10rem;
-    padding-right: 5rem;
-}
-
-.chef-ty-spacer{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 5ch;
-}
-
-.spacer{
-    display: grid;
-    grid-template-columns: 1fr 2fr ;
-}
+    grid-template-columns: auto 1fr; 
+    align-items: start; 
+  }
+  
+  .image-chef-ty img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .content-chef-ty {
+    max-width: 600px; 
+  }
 
 figcaption{
     font-size: 7px;

@@ -19,7 +19,7 @@ footer {
 
 .your-dream-getaway h3{
     font-size:20px;
-    text-align: right;
+    text-align: center;
 }
 
 body{
@@ -40,13 +40,13 @@ h1{
 
 h2 {
     font-family:euphemia ucas;
-    font-size: 12px;
+    font-size: 17px;
 
 }
 
 h3{
     font-family:euphemia ucas;
-    font-size: 10px;
+    font-size: 15px;
     color: black;
     font-style: italic;
     font-weight: normal;
@@ -54,13 +54,13 @@ h3{
 
 h4{
     font-family:euphemia ucas;
-    font-size: 7px;
+    font-size: 12px;
 
 }
 
 p{
     font-family:euphemia ucas;
-   font-size: 7px; 
+   font-size: 12px; 
 }
 
 .nav {
@@ -88,7 +88,7 @@ li a{
         text-decoration: none;
         border-style:inset;
         border-color: black;
-        font-size: medium;
+        font-size: 12px;
         
     }
     
@@ -197,7 +197,7 @@ figcaption{
     border-style:groove;
     border-color: black;
     background: #ffffff;
-    font-size: 7px;
+    font-size: 10px;
     float: right;
     margin-bottom: 2rem;
     margin-left: 2rem;
@@ -224,7 +224,7 @@ figcaption{
 }
 
 .guest-rooms li{
-    font-size: 7px;
+    font-size: 12px;
     font-family: euphemia ucas;
 }
 
@@ -240,10 +240,9 @@ figcaption{
     border-style:groove;
     border-color: black;
     background: #ffffff;
-    font-size: 7px;
+    font-size: 10px;
     margin-bottom: 2rem;
     margin-left: 2rem;
-    font-size: x-small;
     white-space: nowrap; 
     border-radius: 15%;
 
@@ -278,7 +277,7 @@ figcaption{
     border-style:groove;
     border-color: black;
     background: #ffffff;
-    font-size: 7px;
+    font-size: 10px;
     float: right;
     margin-bottom: 2rem;
     margin-left: 2rem;
@@ -356,7 +355,7 @@ figcaption{
 
 ul li {
 font-family: euphemia ucas;
-font-size: 7px;
+font-size: 12px;
 list-style-type: none;}
 
 ul li::before{
@@ -381,7 +380,7 @@ content:"-"
     border-style:groove;
     border-color: black;
     background: #ffffff;
-    font-size: 7px;
+    font-size: 10px;
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-family: euphemia ucas;
@@ -410,9 +409,10 @@ content:"-"
 
 .beach-sand-poolside{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
+    
 }
 
 .poolside-image{
@@ -422,7 +422,7 @@ content:"-"
 
 .lobby-other{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -431,7 +431,7 @@ content:"-"
     border-style:groove;
     border-color: black;
     background: #ffffff;
-    font-size: 7px;
+    font-size: 10px;
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-family: euphemia ucas;
@@ -458,14 +458,22 @@ content:"-"
 
 .act{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 1rem;
+    padding-left: 2rem;
+
 }
 
 .activities-right img{
     padding:0.5rem;
+}
 
+.activities-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+    margin-top: 1rem;
 }
 
 .submit-index input[type="submit"]{
@@ -492,7 +500,7 @@ content:"-"
     font-size: 15px;
     margin-bottom: 15ch;
     margin-left: 0;
-    margin-right: 10ch;
+    margin-right: 15ch;
 }
 
 .submit-contact input[type="submit"]:hover {
@@ -506,3 +514,5 @@ content:"-"
 .please-review{
     padding-left: 5ch;
 }
+
+

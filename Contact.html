@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="./favicon/favicon.png">
-    <title>Shangri-La | Home</title>
+    <title>Shangri-La | Contact</title>
+    <style>
+        input{
+            display: inline;
+        }
+        form{
+            text-align: center;
+            max-width:300px;
+            margin: 0 auto;
+        }
+        .check-out{
+            margin:1ch;
+    
+        }
+        input[type="submit"]{
+            display: block;
+            margin-left:300px;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,33 +76,35 @@
     </ul>
 </nav>
 
+<main>
 <div class="booking">
 <h1>Book Now</h1>
 <h2>Join Us in Paradise</h2>
 </div>
 
 
-<div class="booking-form">
 
-    Check-in:
-    <input type="text" class="text-box" placeholder="Thursday, April 3 2025">
+<form>
+    <div class="check-out">
+        <label for="text-box">Check-out:</label>
+        <input type="text" id="text-box" placeholder="Thursday, April 3 2025">
 </div>
-    
-<div class="booking-form">
-        Check-out:
-    <input type="text" class="text-box">
-</div>
-<div class="booking-form-room-type">
-    Room Type:
-    <input type="text" class="text-box">
-    </div>
 
-    <div class="submit-contact">
+<div class="check-out">
+    <label for="text">Check-in:</label>
+    <input type="text" id="text">
+</div>
+
+<div class="check-out">
+    <label for="room">Room-type:</label>
+    <input type="text" id="room">
+</div>
     <input type="submit"> 
-    </div>
+</form>
+
     
     
-    
-<footer>Follow us on social media @Shangri_LaResort</footer>
+</main>  
+<footer><p>Follow us on social media @Shangri_LaResort</p></footer>
 </body>
 </html>

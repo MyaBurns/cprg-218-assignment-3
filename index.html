@@ -6,6 +6,12 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="./favicon/favicon.png">
     <title>Shangri-La | Home</title>
+    <style>
+        input[type="submit"]{
+            display: block;
+            margin-left:100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,6 +64,7 @@
     </ul>
 </nav>
 
+<main>
 <div class="index-content">
     <div class="index-left">
                 <h2>Escape to Paradise
@@ -79,11 +86,9 @@
                 Our Luxurious Accommodations</p>
 
                 <div class="circle-images">
-                    
                     <img src="./images/alteredimages/RESIZEcouple.png" alt="Image of a tropical resort with a man and a woman standing in the center on the horizon. There are palm trees on the left and right of the image, and the couple are standing above the water."
-                    class="circle-images" width="300" height="200">
-
-                    <img src="./images/alteredimages/RESIZEresort-drone.png" alt="Image of a drone shot of the Shangri-La Resort. The grass is green and there are palm trees around the building. There are small ponds on the left and right of the image." class="circle-images" width="200" height="150">
+                    class="circle-images" width="300" height="300">
+                    <img src="./images/alteredimages/RESIZEresort-drone.png" alt="Image of a drone shot of the Shangri-La Resort. The grass is green and there are palm trees around the building. There are small ponds on the left and right of the image." class="circle-images" width="200" height="200">
                 </div>
                 
     </div>
@@ -114,46 +119,53 @@
             
                 </ul>
 
-                <div class="please-review">
-                <p>We are always striving to provide exceptional experiences for our guests. If you have enjoyed your stay at Shangri La Beach Resort, we would love to hear from you!</p></div>
+          
+                <p>We are always striving to provide exceptional experiences for our guests. If you have enjoyed your stay at Shangri La Beach Resort, we would love to hear from you!</p>
+       
                 
     </div>
     <div class="index-right">
 
-        <div class="check-in">
-
-            Check-in:
-            <input type="text" class="text-box" placeholder="Thursday, April 3 2025">
-        </div>
-           
-        <div class="check-out">
-                Check-out:
-                <input type="text" class="text-box">
-        </div>
-        
-        <div class="room-type">
-            Room Type:
-            <input type="text" class="text-box"> 
-        </div>
-        <div class="submit-index">
-            <input type="submit"> 
+        <form>
+            <div class="check-out">
+            <label for="text-box">Check-out:</label>
+            <input type="text" id="text-box" placeholder="Thursday, April 3 2025">
             </div>
-      
+            
+            <div class="check-out">
+                <label for="text">Check-in:</label>
+                <input type="text" id="text">
+                </div>
+            
+                <div class="check-out">
+                    <label for="room">Room-type:</label>
+                    <input type="text" id="room">
+                    </div>
+                
+            
+            
+            
+            
+                <input type="submit"> 
+            </form>
+
             <h3>Our Luxurious Accommodations</h3>
 
-                <h3>Ocean View Deluxe Room</h3>
-                <p>Enjoy stunning ocean views from your private balcony.
-                [View Details]</p>
-                
-                
-                <h3>Beachfront Suite</h3>
-                <p>Step directly onto the sand from your spacious suite.
-                [View Details]</p>
-                
-                <h3>Garden View Family Room</h3>
-                <p>Perfect for families, with ample space and garden views
-                [View Details]</p>
-    </div>
+            <h3>Ocean View Deluxe Room</h3>
+            <p>Enjoy stunning ocean views from your private balcony.
+            [View Details]</p>
+            
+            
+            <h3>Beachfront Suite</h3>
+            <p>Step directly onto the sand from your spacious suite.
+            [View Details]</p>
+            
+            <h3>Garden View Family Room</h3>
+            <p>Perfect for families, with ample space and garden views
+            [View Details]</p>
+            </div>
+
+      <div class="index-right">
         <div class="index-images">
             <img src="./images/alteredimages/RESIZEpalm-tree.png" alt="Image overlooking the dark blue ocean, with the top of a palm tree on the right, and a rainbow in the distance on the left side of the image. Overall, the image looks as though it was taken after a storm." width="150" height="150">
             
@@ -163,9 +175,11 @@
             
             <img src="./images/alteredimages/RESIZEpink-sand.png" alt="Close up image of a footprint in pink sand." width="150" height="150">
         </div>
+    </div>
+        
 </div>
 
-    
-<footer>Follow us on social media @Shangri_LaResort</footer>
+</main>    
+<footer><p>Follow us on social media @Shangri_LaResort</p></footer>
 </body>
 </html>

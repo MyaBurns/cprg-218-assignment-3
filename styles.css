@@ -1,6 +1,3 @@
-
-
-
 @font-face {
     font-family: 'euphemia_ucasregular';
     src: url('euphemia-ucas-regular-webfont.woff2') format('woff2'),
@@ -9,8 +6,11 @@
     font-style: normal;
 
 }
+* {
+    box-sizing: border-box;
+}
 footer {
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     background-color: #306770;
     color: white;
     font-style:italic;
@@ -18,8 +18,9 @@ footer {
 }
 
 .your-dream-getaway h3{
-    font-size:20px;
+    font-size:25px;
     text-align: center;
+    font-family: euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 body{
@@ -39,13 +40,13 @@ h1{
 }
 
 h2 {
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-size: 17px;
 
 }
 
 h3{
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-size: 15px;
     color: black;
     font-style: italic;
@@ -53,13 +54,13 @@ h3{
 }
 
 h4{
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-size: 12px;
 
 }
 
 p{
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
    font-size: 12px; 
 }
 
@@ -88,7 +89,7 @@ li a{
     border-style:inset;
     border-color: black;
     font-size: 17px;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     }
     
 li a:hover{
@@ -107,21 +108,24 @@ li a:hover{
 }
 
 .index-left{
-    padding:1rem;
+    margin-left: 0;
+    padding-left: 0;
     
 }
-.index-middle{
-    padding:1rem;
-    margin-left: 1rem;
+.index-middle ul {
+  margin-left: 0;
+  padding-inline-start: 0 !important;
     
 }
 
 .index-middle ul li {
   margin-bottom: 1.5em; 
+  padding-left: 0;
   line-height: 1.6;
-  font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   list-style-type: none;
+  margin-left: 0;
 }
 
 .index-middle ul li::before{
@@ -129,25 +133,24 @@ content:"-"
 }
 
 
-.index-middle h2{
-    margin-left: 2.5rem;
-}
 .index-right{
     padding:1rem;
     margin-top: 2rem;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+.circle-images img:first-of-type{
+    margin-right: 1rem;
 }
 
-.circle-images{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.circle-images {
+    padding-top: 2ch;
+    margin-top: 2ch;
+}
+.circle-images img {
   border-radius: 50%;
   width: 100px;
   height:100px;
-  object-fit: cover;
-  gap:1rem;
-  padding-top: 2ch;
-  margin-top: 2ch;
+  float: left;
 }
 
 .index-images{
@@ -159,48 +162,6 @@ content:"-"
     padding: 1ch;
 }
 
-.self-care{
-display: grid;
-grid-template-columns: 1fr 2fr;
-align-items: start;
-}
-
-.reefs{
-    display: grid;
-grid-template-columns: 1fr 2fr ;
-align-items: start;
-}
-
-.self-care-reefs{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap:1rem;
-    margin-top: 5ch;
-}
-
-.chef-ty {
-    display: grid;
-    grid-template-columns: auto 1fr; 
-    align-items: start; 
-    gap: 2rem;
-  }
-  
-  .image-chef-ty img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .content-chef-ty {
-    max-width: 600px; 
-  }
-
-figcaption{
-    font-size: 7px;
-    font-style: italic;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
-}
-
 .full-article{
     border-style:groove;
     border-color: black;
@@ -209,7 +170,7 @@ figcaption{
     float: right;
     margin-bottom: 2rem;
     margin-left: 2rem;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     white-space: nowrap; 
     border-radius: 15%;
 }
@@ -233,7 +194,7 @@ figcaption{
 
 .guest-rooms li{
     font-size: 12px;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 .book-now a{
@@ -244,7 +205,7 @@ figcaption{
 }
 
 .book-now{
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     border-style:groove;
     border-color: black;
     background: #ffffff;
@@ -289,7 +250,7 @@ figcaption{
     float: right;
     margin-bottom: 2rem;
     margin-left: 2rem;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     white-space: nowrap;
     border-radius: 15%; 
 
@@ -305,54 +266,13 @@ figcaption{
     background-color: #E9BC44;
 }
 
-.serenity-sanctuary{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap:1ch;
-    }
-    
-    .activities{
-        display: grid;
-    grid-template-columns: 1fr 2fr ;
-    gap:1rem;
-    }
-    
-    .serenity-activities{
-        display: grid;
-        grid-template-columns: auto auto;
-        gap:1rem;
-        margin-top: 5ch;
-    }
-    
-    .culinary-journey{
-        display: grid;
-    grid-template-columns: auto 1fr;
-    align-items:start;
-    gap:1ch;
-    }
-
-    .culinary-journey-content{
-        margin-right: 10rem;
-        padding-right: 5rem;
-    }
-
-    .culinary-spacer{
-        display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 5ch;
-    }
-
-    .amenities-spacer{
-        display: grid;
-    grid-template-columns: 1fr 2fr ;
-    }
 
     input[type="submit"] {
         border-style: groove;
         border-color: black;
         background-color: #306770;
         font-size: 15px;
-        font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
         color: white;
         overflow: auto;
     }
@@ -362,7 +282,7 @@ figcaption{
     }
 
 .guest-rooms ul li {
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
 font-size: 12px;
 list-style-type: none;}
 
@@ -370,14 +290,7 @@ list-style-type: none;}
 content:"-"
 }
 
-.massages-body-facials{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-.add-ons-wellness-manicures{
+.wide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
@@ -391,7 +304,7 @@ content:"-"
     font-size: 10px;
     margin-bottom: 2rem;
     margin-left: 2rem;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     white-space: nowrap; 
     border-radius: 15%;
 }
@@ -406,11 +319,10 @@ content:"-"
     background-color: #E9BC44;
 }
 
-.serenity-circle-images{
-    width:150px;
-    height: 150px;
+.serenity-circle-images img {
+    width:200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 
@@ -442,7 +354,7 @@ content:"-"
     font-size: 10px;
     margin-bottom: 2rem;
     margin-left: 2rem;
-    font-family:euphemia ucas,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
     border-radius: 15%;
 }
 
@@ -473,56 +385,35 @@ content:"-"
 
 }
 
-.activities-right img{
-    display: block;
-    object-fit: cover;
-}
-
-.activities-right {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center; 
-    margin-top: 1rem;
-
-}
-
 .submit-index input[type="submit"]{
     border-style:groove;
     border-color: black;
     background: #306770;
     font-size: 15px;
-    margin-bottom: 5ch; 
     margin-top: 2ch;
 }
 
-.submit-index{
-    text-align: right;
-}
 
 .submit-index input[type="submit"]:hover {
     background-color: #E9BC44;
 }
 
-.submit-contact input[type="submit"]{
+input[type="submit"]{
     border-style: groove;
     border-color: black;
     background: #306770;
     font-size: 15px;
     margin-bottom: 15ch;
     margin-left: 0;
-    margin-right: 15ch;
+
 }
 
-.submit-contact input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #E9BC44;
 }
 
 .submit-contact{
     text-align: right;
-}
-
-.please-review{
-    padding-left: 5ch;
 }
 
 .serenity-head{
@@ -536,3 +427,75 @@ content:"-"
 .activities-head{
     text-align: center;
 }
+
+.grid-content{
+    display: grid;
+grid-template-columns: 1fr 1fr ;
+align-items: start;
+grid-gap: 1rem;
+}
+figure {
+    margin: 0;
+}
+
+.grid-content div:first-of-type {
+    float: left;
+    width: 50%;
+    margin-right: 1rem;
+}
+.grid-content div:first-of-type img {
+    width: 100%;
+    height: auto;
+}
+figcaption{
+    font-size: 7px;
+    font-style: italic;
+    font-family:euphemia_ucasregular,"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+.wide {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media all and (max-width: 1200px){
+    input {
+        display: block;    
+    }
+}
+@media all and (max-width:800px){
+    .index-content{
+        grid-template-columns: 1fr;
+    }
+    .index-images{
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-items a{
+        font-size:12px;
+    }
+    .wide {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .beach-sand-poolside{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lobby-other{
+        grid-template-columns: 1fr;
+    }
+
+    .act{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 500px){
+    .grid-content {
+        grid-template-columns: 1fr;
+    }
+    .wide {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
